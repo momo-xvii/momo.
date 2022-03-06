@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: 2px white solid;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    border: 2px black solid;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:active {
+    position: relative;
+    top: 4px
+}
+
+header {
+    text-align: center;
+    background-color: #000000;
+    padding: 16px;
+    border-bottom: 4px solid red;
+}
+
+header h1 {
+    color: #FFFBE9;
+    text-transform: uppercase;
+}
+
+nav li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #FFFBE9;
+    letter-spacing: 2px;
+}
+
+main {
+    background-color: #E3CAA5;
+    padding: 10px;
+    text-align: center;
+}
+
+section h1 {
+    color: #FFFBE9;
+    font-size: 40px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: red;
+    padding: 10px;
+    box-shadow: 2px 2px 30px red;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+img {
+    width: 70%;
+    height: 600px;
+    box-shadow: 30px 30px black;
+    margin-bottom: 50px;
+}
+
+.h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFFBE9;
+}
+
+.corsi-disponibili {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.corso {
+    width: 33%;
+    padding: 30px;
+}
+
+.corso h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.corso p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    border: 1px solid red;
+}
+
+footer h3 {
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .corso {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    section h1 {
+        color: #FFFBE9;
+        font-size: 40px;
+        border-radius: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: red;
+        padding: 10px;
+        box-shadow: 2px 2px 30px red;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+    .h1 {
+        width: 100%;
+    }
+}
+
+</style>
+
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Basket - incomincia subito!</h1>
+
+
+        <nav>
+            <ul>
+                <li><button> Home</button></li>
+                <li> <button> Chi siamo </button> </li>
+                <li> <button> Conatti</button></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h1>La scuola di pallacanestro di pavia</h1>
+        </section>
+
+        <section class="immagini">
+            <figure>
+                <img src="img/lebron.jpeg" alt="Lebron James">
+            </figure>
+        </section>
+
+
+        <h1 class="h1">Corsi disponibili</h1>
+
+        <div class="corsi-disponibili">
+
+            <div class="corso">
+                <h1>Minibasket da 7 anni in su</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate perferendis illo maxime enim minus veritatis illum et harum inventore autem architecto itaque sequi odit, eos accusamus sapiente nihil sed.
+
+                </p>
+            </div>
+
+            <div class="corso">
+                <h1>Basket categoria Junior</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate perferendis illo maxime enim minus veritatis illum et harum inventore autem architecto itaque sequi odit, eos accusamus sapiente nihil sed.
+
+                </p>
+            </div>
+
+            <div class="corso">
+                <h1>Basket Prima squadra</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptate perferendis illo maxime enim minus veritatis illum et harum inventore autem architecto itaque sequi odit, eos accusamus sapiente nihil sed.
+
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <h3>Copyright - P.iva 0000 000 000 - N. tel 333 33 3333 - info@basketpavia.com</h3>
+    </footer>
+
+
+
+</body>
+
+</html>
